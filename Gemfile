@@ -24,3 +24,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+require 'rbconfig'
+gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
